@@ -35,9 +35,9 @@ Prosesnya sangat sederhana. Anda hanya perlu mengganti awalan URL GitHub dengan 
 Perhatikan pola transformasi URL berikut:
 
 **URL Asli GitHub:**
-https://github.com/{nama_profil}/{nama_repositori}@{versi}/{path_ke_file}
+> https://github.com/{nama_profil}/{nama_repositori}@{versi}/{path_ke_file}
 **URL CDN jsDelivr:**
-https://cdn.jsdelivr.net/gh/{nama_profil}/{nama_repositori}@{versi}/{path_ke_file}
+> https://cdn.jsdelivr.net/gh/{nama_profil}/{nama_repositori}@{versi}/{path_ke_file}
 **Rincian Perubahan:**
 *   Ganti `https://github.com/` dengan `https://cdn.jsdelivr.net/gh/`.
 *   Bagian `gh` setelah `jsdelivr.net/` adalah singkatan dari "GitHub".
@@ -52,17 +52,17 @@ Mari kita lihat contoh konversi menggunakan repositori `wuzz-icons`.
 #### **1. URL Asli di Repositori GitHub**
 
 Ini adalah tautan langsung ke file `icons.woff2` pada repositori GitHub dengan tag versi `v0.3.0`. URL ini tidak ideal untuk produksi karena tidak disajikan melalui CDN.
-https://github.com/medilana/wuzz-icons@v0.3.0/icons.woff2
+> https://github.com/medilana/wuzz-icons@v0.3.0/icons.woff2
 #### **2. URL Setelah Dikonversi ke CDN jsDelivr**
 
 Dengan menerapkan pola di atas, kita mendapatkan URL CDN yang sangat cepat dan di-cache secara global. Ini adalah format yang **direkomendasikan** untuk digunakan di website atau aplikasi Anda.
-https://cdn.jsdelivr.net/gh/medilana/wuzz-icons@v0.3.0/icons.woff2
+> https://cdn.jsdelivr.net/gh/medilana/wuzz-icons@v0.3.0/icons.woff2
 ### Menggunakan Versi Terbaru (Latest)
 
 Jika Anda ingin selalu menggunakan versi terbaru dari file tanpa harus mengubah URL secara manual setiap ada rilis baru, Anda bisa menghilangkan tag versi dari URL.
 
 **Contoh:**
-https://cdn.jsdelivr.net/gh/medilana/wuzz-icons/icons.woff2
+> https://cdn.jsdelivr.net/gh/medilana/wuzz-icons/icons.woff2
 **Peringatan:** Menggunakan versi terbaru tanpa tag spesifik dapat berisiko menyebabkan *breaking changes* pada proyek Anda ketika repositori diperbarui. Untuk penggunaan di lingkungan produksi, sangat disarankan untuk selalu **mengunci pada versi spesifik** (misalnya `@v0.3.0`).
 
 ---
