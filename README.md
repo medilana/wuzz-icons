@@ -36,8 +36,10 @@ Perhatikan pola transformasi URL berikut:
 
 **URL Asli GitHub:**
 > https://github.com/{nama_profil}/{nama_repositori}@{versi}/{path_ke_file}
+
 **URL CDN jsDelivr:**
 > https://cdn.jsdelivr.net/gh/{nama_profil}/{nama_repositori}@{versi}/{path_ke_file}
+
 **Rincian Perubahan:**
 *   Ganti `https://github.com/` dengan `https://cdn.jsdelivr.net/gh/`.
 *   Bagian `gh` setelah `jsdelivr.net/` adalah singkatan dari "GitHub".
@@ -63,6 +65,7 @@ Jika Anda ingin selalu menggunakan versi terbaru dari file tanpa harus mengubah 
 
 **Contoh:**
 > https://cdn.jsdelivr.net/gh/medilana/wuzz-icons/icons.woff2
+
 **Peringatan:** Menggunakan versi terbaru tanpa tag spesifik dapat berisiko menyebabkan *breaking changes* pada proyek Anda ketika repositori diperbarui. Untuk penggunaan di lingkungan produksi, sangat disarankan untuk selalu **mengunci pada versi spesifik** (misalnya `@v0.3.0`).
 
 ---
