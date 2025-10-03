@@ -1,5 +1,5 @@
 # Wuzz Icons
-A beautifully crafted, pixel-perfect open-source icon set for modern web projects
+A beautifully crafted, pixel-perfect open-source icon set for modern web projects.
 
 > Satu set ikon open-source yang dibuat dengan indah dan presisi pixel untuk proyek web modern.
 
